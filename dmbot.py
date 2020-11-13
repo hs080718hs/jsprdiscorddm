@@ -40,5 +40,5 @@ DM 전송 실패한 사람들 (디엠을 막았을수도 있습니다) :
 DM 전송 실패한 사람들이 너무 많아 보낼 수 없습니다. 다음은 실패한 사람들의 수 입니다.
 {len(fail)}""")
 
-access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 bot.run(access_token)
