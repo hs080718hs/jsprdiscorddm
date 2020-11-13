@@ -2,6 +2,7 @@
 
 from discord.ext import commands
 import discord
+import os
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
@@ -39,4 +40,5 @@ DM 전송 실패한 사람들 (디엠을 막았을수도 있습니다) :
 DM 전송 실패한 사람들이 너무 많아 보낼 수 없습니다. 다음은 실패한 사람들의 수 입니다.
 {len(fail)}""")
 
-bot.run('Nzc2NDE3MDIzMzY5Njc0Nzcz.X60ksw.q7iqJiQjDAp5fx8vpSCJ8m2cYFs')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
